@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui:composition template="../WEB-INF/templates/templateWithUser.xhtml"
+				xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:ui="http://java.sun.com/jsf/facelets"
+				xmlns:f="http://java.sun.com/jsf/core"
+				xmlns:h="http://java.sun.com/jsf/html">
+
+	<ui:define name="menu">
+    	<h:outputText value="Angemeldet als #{user.nachname}, #{user.vorname}"/>
+    </ui:define>
+
+    <ui:define name="content">
+    	<h:panelGrid columns="2" rowClasses="alignTop">
+	    	<h:form>
+		    	<h:panelGrid columns="2">
+		    		<h:outputText value="Name:"/> <h:inputText value="#{customer.nachname}"/>
+		    		<h:outputText value="Vorname:"/> <h:inputText value="#{customer.vorname}"/>
+		    		<h:outputText value="E-Mail:"/> <h:inputText value="#{customer.email}"/>
+		    		<h:commandButton value="Registrieren" action="#{registration.register(customer)}"/>
+		    	</h:panelGrid>
+	    	</h:form>
+	    	<h:panelGroup layout="block" style="margin-left:50px;"  rendered="#{not empty recentRegistrations}">
+	    		<h:outputText value="Aktuelle Anmeldungen..."/>
+		    	<h:dataTable value="#{recentRegistrations}" var="reg">
+		    		<h:column>
+		    			<h:outputText value="#{reg.nachname},"/>
+		    		</h:column>
+		    		<h:column rowHeader="Vorname">
+		    			<h:outputText value="#{reg.vorname}"/>
+		    		</h:column>
+		    	</h:dataTable>
+	    	</h:panelGroup>
+    	</h:panelGrid>
+    </ui:define>
+</ui:composition>

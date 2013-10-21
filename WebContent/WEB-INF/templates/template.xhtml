@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+	<h:head>
+		<link href="../css/cdi.css" rel="stylesheet" type="text/css" />
+		<title>MATHEMA Frühjahrscampus - Beispielanwendung: Contexts
+		and Dependency Injection</title>
+	</h:head>
+
+	<h:body>
+		<div id="header">
+			<img alt="Meet The Experts" src="../img/meet_the_experts.png" id="experts" />
+			<img alt="MATHEMA" src="../img/mathema.png" id="mathema" />
+		</div>
+		<div id="menu">
+			<ui:insert name="menu"></ui:insert>
+		</div>
+		<div id="content">
+			<table style="margin-left: 50px; margin-top: 20px;">
+				<tr>
+					<td style="width: 800px;color: #003870;"><ui:insert name="content"></ui:insert></td>
+					<td><img alt="MATHEMA Bean" src="../img/bean.png" valign="bottom" /></td>
+				</tr>
+			</table>
+		</div>
+		<div id="footer"></div>
+	</h:body>
+
+</html>

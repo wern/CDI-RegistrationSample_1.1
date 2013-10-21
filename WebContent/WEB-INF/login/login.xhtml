@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui:composition template="../templates/template.xhtml"
+				xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:ui="http://java.sun.com/jsf/facelets"
+				xmlns:f="http://java.sun.com/jsf/core"
+				xmlns:h="http://java.sun.com/jsf/html">
+
+    <ui:define name="content">
+		<h:body>
+	        <h2>Bitte erst anmelden :)</h2>
+	        <form name="loginForm" method="post" action="j_security_check">
+	            <p><strong>Login: </strong>
+	                <input type="text" name="j_username" size="25" /></p>
+	            <p><strong>Passwort: </strong>
+	                <input type="password" size="15" name="j_password" /></p>
+	            <p>
+	                <input type="submit" value="Anmelden"/>
+	            </p>
+	        </form>
+	    </h:body>
+    </ui:define>
+</ui:composition>

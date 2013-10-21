@@ -1,0 +1,8 @@
+<beans>
+	<!--  decorators>
+		<class>de.mathema.campus.decorators.RegistrationDecorator</class>
+	</decorators>
+	<interceptors>
+		<class>de.mathema.campus.interceptors.TracingInterceptor</class>
+	</interceptors -->
+</beans>

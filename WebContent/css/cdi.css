@@ -1,0 +1,45 @@
+#header {
+    background: url("../img/header.png") repeat scroll 0 0 transparent;
+    height: 162px;
+    width: 1062px;
+}
+#menu {
+    background: url("../img/background_topmenu_klein.png") repeat-y scroll 0 0 white;
+    height: 20px;
+    margin-left: 6px;
+    width: 1062px;
+    color: #003870;
+    padding-left: 50px;
+}
+#content {
+    background: url("../img/background_yellow.png") repeat-y scroll 0 0 transparent;
+    clear: both;
+    float: left;
+    overflow: hidden;
+    padding-left: 0;
+    position: relative;
+    color: #003870;
+    width: 100%;
+}
+#footer {
+    background: url("../img/footer.png") no-repeat scroll 0 0 transparent;
+    clear: both;
+    float: left;
+    height: 110px;
+    margin-left: 0;
+    margin-top: 0;
+    width: 1062px;
+}
+#experts {
+    left: 70px;
+    position: absolute;
+    top: 23px;
+}
+#mathema {
+    left: 844px;
+    position: absolute;
+    top: 120px;
+}
+.alignTop {
+    vertical-align: top;
+}
